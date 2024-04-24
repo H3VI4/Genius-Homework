@@ -1,0 +1,161 @@
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-weight: 400;
+  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+}
+
+:root {
+  --color-brand-blue: #2b7fff;
+  --color-brand-white: #ffffff;
+  --color-basic-black: #011c44;
+  --color-basic-dark: #4a4a4a;
+}
+/* Base */
+body {
+  color: var(--color-basic-black);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.16;
+}
+ul {
+  list-style-type: none;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Button */
+.button {
+  color: var(--color-brand-white);
+  font-family: Roboto, sans-serif;
+  background-color: var(--color-brand-blue);
+  border: 2px solid var(--color-brand-blue);
+  border-radius: 32px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+.button:hover {
+  color: var(--color-basic-black);
+  background-color: transparent;
+}
+
+/* Link */
+.headerlink {
+  color: var(--color-basic-black);
+  text-decoration: none;
+  line-height: 1.16;
+}
+
+.footerlink {
+  color: var(--color-brand-white);
+  line-height: 1.17;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.headerlink:hover {
+  color: var(--color-brand-blue);
+  font-weight: 700;
+}
+
+.footerlink:hover {
+  color: var(--color-brand-blue);
+  font-weight: 700;
+}
+
+/* Hero section */
+.hero-title {
+  color: var(--color-brand-blue);
+  font-family: Play, sans-serif;
+  text-transform: capitalize;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.8;
+  word-wrap: normal;
+}
+
+/* Section title */
+.section-title {
+  text-align: center;
+  font-family: Play, sans-serif;
+  font-size: 64px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.section-title .accent {
+  color: var(--color-brand-blue);
+}
+
+.section-title .capital {
+  text-transform: capitalize;
+}
+
+/* Advantages list */
+.advantages-list {
+  line-height: 1.33;
+}
+
+/* Hero text */
+.hero-text {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Aboutus text */
+.aboutus-text {
+  font-size: 22px;
+  line-height: 1.72;
+}
+
+.aboutus-text span {
+  font-weight: 600;
+  color: var(--color-basic-black);
+  text-transform: capitalize;
+}
+
+/* Footer */
+.address-link {
+  color: var(--color-brand-white);
+  line-height: 1.17;
+  font-size: 16px;
+}
+
+.address-link:hover {
+  color: var(--color-brand-blue);
+  text-decoration: none;
+}
+
+.address-copyright {
+  font-size: 13px;
+  line-height: 1.17;
+}
