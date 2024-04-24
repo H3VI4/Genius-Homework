@@ -1,0 +1,156 @@
+.footer {
+  background-color: var(--color-basic-black);
+  padding: 56px 0;
+  background-image: url(../images/footer-background.png);
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 66px;
+
+  &__container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-basis: 50%;
+    gap: 42px;
+    flex-direction: column;
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      gap: 20px;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+  }
+
+  &__link {
+    color: var(--color-brand-white);
+    line-height: 1.17;
+    text-decoration: none;
+    font-size: 14px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      color: var(--color-brand-blue);
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-basis: 50%;
+    text-align: center;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    &__list {
+      display: none;
+
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 16px;
+
+      @media screen and (min-width: $bp-tablet) {
+        display: flex;
+      }
+    }
+  }
+
+  &__contacts {
+    flex-direction: column;
+    width: 190px;
+    text-align: center;
+  }
+
+  &__logo {
+    flex-grow: 1;
+  }
+
+  &__address__icon {
+    fill: var(--color-brand-white);
+    width: 32px;
+    height: 32px;
+
+    &:hover {
+      fill: var(--color-brand-blue);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__copyright__container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 16px;
+  }
+
+  &__address__link {
+    color: var(--color-brand-white);
+    line-height: 1.17;
+    font-size: 14px;
+    text-decoration: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      color: var(--color-brand-blue);
+      text-decoration: none;
+    }
+  }
+
+  &__copyright {
+    font-size: 12px;
+    line-height: 1.17;
+    margin-bottom: 0;
+    color: var(--color-secondary-grey);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 13px;
+    }
+  }
+
+  &::after {
+    display: none;
+    background-image: url(..//images/decor-medicine.png);
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 275px;
+    height: 175px;
+    bottom: 0;
+    right: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.whywe-card {
+  border-radius: 32px;
+  padding: 24px 32px;
+  max-width: 316px;
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+  background-color: var(--color-brand-white);
+
+  @media screen and (min-width: $bp-tablet) {
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}

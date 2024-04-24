@@ -1,0 +1,120 @@
+.transform-section {
+  padding-top: 5px;
+  padding-bottom: 0px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 63px;
+    padding-bottom: 0px;
+  }
+
+  &__container {
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 28px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 32px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 64px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__content {
+    flex-basis: 50%;
+    max-width: 709px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.72;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+      margin-bottom: 40px;
+    }
+
+    & span {
+      font-weight: 600;
+      color: var(--color-basic-black);
+      text-transform: capitalize;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img-container {
+    display: block;
+  }
+
+  &__img-top {
+    display: none;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__img-bottom {
+    display: none;
+    border-radius: 50%;
+    position: relative;
+    right: -45%;
+    bottom: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__star-large {
+    position: relative;
+    left: 90%;
+    top: 20px;
+    animation: rotate360 3s ease infinite;
+    height: 40px;
+    width: 40px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      animation: rotate360 2s ease infinite;
+      left: 125px;
+      top: 50px;
+    }
+  }
+
+  &__star-medium {
+    display: none;
+    position: relative;
+    left: 525px;
+    top: -300px;
+    animation: riseup 2s ease infinite;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__star-small {
+    display: none;
+    position: relative;
+    left: 450px;
+    top: -75px;
+    animation: shift 3s ease infinite;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+}

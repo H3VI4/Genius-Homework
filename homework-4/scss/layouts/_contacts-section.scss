@@ -1,0 +1,89 @@
+.contacts-section {
+  padding-top: 20px;
+  padding-bottom: 0;
+  display: flex;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 40px;
+    padding-bottom: 90px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 32px;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-weight: 700;
+      font-size: 64px;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__map {
+    height: 232px;
+    border: 0;
+    margin: 0 -24px;
+    width: -webkit-fill-available;
+
+    @media screen and (min-width: $bp-tablet) {
+      border-radius: 32px;
+      margin: 0;
+      width: 350px;
+      height: 480px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 600px;
+      height: 480px;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 422px;
+    background-color: var(--color-basic-black);
+    background-image: url(..//images/contacts-form-background.png);
+    padding: 42px 30px;
+    border-radius: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 48px 56px;
+    }
+  }
+
+  &__form-field {
+    position: relative;
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0px auto 8px;
+    padding: 11px 24px;
+    font-size: 16px;
+
+    &:hover {
+      background-color: var(--color-brand-white);
+      color: var(--color-basic-black);
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      padding: 16px 32px;
+    }
+  }
+}

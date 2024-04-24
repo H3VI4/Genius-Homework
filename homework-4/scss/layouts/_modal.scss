@@ -1,0 +1,87 @@
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  max-width: 720px;
+  max-height: 680px;
+  padding: 38px;
+  padding-top: 56px;
+  background-color: var(--color-basic-black);
+  border-radius: 48px;
+  position: relative;
+  overflow: scroll;
+  background-image: url(..//images/background-modal.png);
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 48px;
+  }
+
+  &__title {
+    color: var(--color-brand-white);
+    text-align: center;
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0 auto 40px;
+    width: 100%;
+    line-height: 1.15;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-weight: 700;
+      font-size: 64px;
+    }
+  }
+
+  &__text {
+    color: var(--color-brand-white);
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 32px;
+    line-height: 1.15;
+
+    & span {
+      color: var(--color-brand-blue);
+    }
+  }
+
+  &__btn-close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__icon-close {
+    fill: var(--color-brand-white);
+  }
+
+  &__form-field {
+    margin: 0 auto;
+    max-width: 310px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  &__button-submit {
+    display: block;
+    margin: 0px auto 14px;
+
+    &:hover {
+      background-color: var(--color-brand-white);
+      color: var(--color-basic-black);
+    }
+  }
+}
