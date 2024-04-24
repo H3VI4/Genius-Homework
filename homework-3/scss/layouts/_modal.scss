@@ -1,0 +1,78 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  max-width: 720px;
+  max-height: 680px;
+  padding: 42px;
+  background-color: var(--color-basic-black);
+  border-radius: 48px;
+  position: relative;
+  overflow: scroll;
+  background-image: url(..//images/background-modal.png);
+}
+
+.modal-title {
+  color: var(--color-brand-white);
+  text-align: center;
+  font-family: Play, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  margin: 0 auto 40px;
+  width: 435px;
+  line-height: 1.15;
+}
+
+.modal-text {
+  color: var(--color-brand-white);
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  width: 270px;
+  text-align: center;
+  margin: 0 auto 32px;
+  line-height: 1.15;
+}
+
+.modal-text span {
+  color: var(--color-brand-blue);
+}
+
+.modal-submit-button {
+  display: block;
+  margin: 0px auto 8px;
+}
+
+.modal-submit-button:hover {
+  background-color: var(--color-brand-white);
+  color: var(--color-basic-black);
+}
+
+.modal-btn-close {
+  position: absolute;
+  right: 42px;
+  top: 42px;
+  cursor: pointer;
+  fill: var(--color-brand-white);
+  background-color: transparent;
+  border: none;
+}

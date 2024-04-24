@@ -1,0 +1,116 @@
+.footer {
+  background-color: var(--color-basic-black);
+  padding: 56px 0;
+  background-image: url(../images/footer-background.png);
+  position: relative;
+
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+  }
+
+  &__link {
+    color: var(--color-brand-white);
+    line-height: 1.17;
+    text-decoration: none;
+    font-size: 16px;
+
+    &:hover {
+      color: var(--color-brand-blue);
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-basis: 50%;
+    text-align: center;
+    gap: 20px;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    text-align: center;
+  }
+}
+
+.footer-logo {
+  flex-grow: 1;
+  /* display: inline-block; */
+}
+
+.footer__address__icon {
+  fill: var(--color-brand-white);
+}
+
+.footer__address__icon:hover {
+  fill: var(--color-brand-blue);
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.copyright-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.footer-address-link {
+  color: var(--color-brand-white);
+  line-height: 1.17;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-address-link:hover {
+  color: var(--color-brand-blue);
+  text-decoration: none;
+}
+
+.footer .policy {
+}
+
+.footer-copyright {
+  font-size: 13px;
+  line-height: 1.17;
+  margin-bottom: 0;
+  color: var(--color-secondary-grey);
+}
+
+.footer::after {
+  background-image: url(..//images/decor-medicine.png);
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 275px;
+  height: 175px;
+  bottom: 0;
+  right: 0;
+}

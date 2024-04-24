@@ -1,0 +1,11 @@
+.whywe-section {
+  padding-top: 88px;
+  padding-bottom: 35px;
+
+  &__list {
+    display: flex;
+    line-height: 1.33;
+    gap: 56px;
+    justify-content: center;
+  }
+}
