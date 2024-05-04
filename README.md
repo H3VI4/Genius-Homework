@@ -6,5 +6,5 @@
 [JavaScript 2](https://h3vi4.github.io/genius-homework/js-2/)<br>
 [JavaScript 3](https://h3vi4.github.io/genius-homework/js-3/)<br>
 [JavaScript 4](https://h3vi4.github.io/genius-homework/js-4/)<br>
-[JavaScript 5](https://h3vi4.github.io/genius-homework/js-5/)<br>
+
 
